@@ -1,0 +1,1 @@
+# Sensor-Luminosidade-Fade
