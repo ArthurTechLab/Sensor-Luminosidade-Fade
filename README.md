@@ -10,7 +10,7 @@ Criar um sistema simples de automação capaz de:
 
 - Detectar luz ambiente com um sensor LDR
 - Alternar entre estados (Dia/Noite)
-- Evitar oscilações rapidas (histerese)
+- Evitar oscilações rápidas (histerese)
 - Realizar transições suaves entre estados (fade)
 - Emitir sinais sonoros diferentes para cada modo
 <hr>
@@ -52,20 +52,25 @@ Entre 45 e 60 o sistema **mantém o estado atual**, evitando mudanças rápidas 
   <hr>
 
 ## 📊 Exemplo de saída no Serial
+```cpp
 Valor: 72
 Sensor: Dia
 Sistema: Noite
-
-| O sensor indica luz, mas o sistema não mudou de estado devido à histerese
+```
+> O sensor indica luz, mas o sistema não mudou de estado devido à histerese
 <hr>
 
 ## 📸 Demonstração
+### 🌞 Modo Dia
+  ![Circuito funcionando](modoDia.jpg) <br>
+  ### 🌙 Modo Noite
+  ![Circuito funcionando](modoNoite.jpg)
 
-
+  Em breve: Video 
   <hr>
 
 ## 🚀 Melhorias futuras
-- Substituir delay() por millis() (execução não bloqueante)
+- Substituir `delay()` por `millis()` (execução não bloqueante)
 - Adicionar botão para controle manual
 - Ajustar sensibilidade do sensor
 - Melhorar padrão sonoro do buzzer
